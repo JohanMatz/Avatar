@@ -1,0 +1,146 @@
+/*Resetear estilos por defecto*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /*No supera el tamaño definido*/
+    box-sizing: border-box;
+}
+/*Se utiliza para crear variables con valores que sean repetitivos dentro del sitio web*/
+:root{
+    --primary-color: rgb(0, 195, 255)  ;
+    --secondary-color: white;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+.fila{
+    
+    display: flex;
+    width: 1024px;
+    margin: 5% auto; 
+    height: 580px;
+}
+.fila .contBotones {
+    width: 50%;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 30px 20px;
+    border: 5px solid var(--primary-color);
+}
+.fila .contFigura {
+    width: 50%;
+    text-align: center;
+    padding: 30px 20px;
+    border: 5px solid var(--primary-color);
+    overflow: hidden;
+}
+
+
+.contBotones h2 {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    border: 2px solid var(--secondary-color);
+    font-size: 30px;
+}
+.contFigura h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 150px;
+    font-size: 30px;
+}
+.contBotones button {
+    padding: 12px 30px;
+    cursor: pointer;
+    border: 2px double var(--secondary-color);
+    font-size: 15px;
+    background: transparent;
+    margin: 10px;
+    transition: .2s;
+}
+
+/*Hover es un estado de los elementos que se activa al pasar el cursor sobre estos*/
+button:hover{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.contFigura #figura{
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-color);
+    margin: 40px auto;
+    transition: 1s;
+}
+#figura.circulo {
+    border-radius: 50%;
+}
+#figura.rombo {
+    transform: rotate(45deg);
+    
+}
+#figura.cuadradoH {
+    width: 250px;
+    height: 150px;
+    background-color: var(--primary-color);
+    margin: 40px auto;
+    transition: 1s;
+}
+#figura.cuadradoV {
+    width: 150px;
+    height: 250px;
+    background-color: var(--primary-color);
+    margin: 40px auto;
+    transition: 1s;
+}
+#figura.triangulo {
+    border-right: 75px solid white;
+    border-bottom: 150px solid var(--primary-color);
+    border-left: 75px solid white;
+}
+
+#figura.izquierda {
+    transform: translateX(-100px);
+}
+#figura.derecha {
+    transform: translateX(100px);
+}
+#figura.arriba {
+    transform: translateY(-100px);
+}
+#figura.abajo {
+    transform: translateY(100px);
+}
+#figura.diagonal {
+    transform: translate(100px, -100px);
+}
+#figura.imagen {
+    width: 300px;
+    height: 200px;
+    background: url(../img/tumblr.gif);
+
+}
+#figura.desaparece {
+    transform: translateX(500px);
+}
+body a button{
+    border: 2px solid var(--primary-color);
+    margin: 2%;
+    padding: 10px 20px;
+    transition: 0.2s;   
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    text-decoration: none;
+    color: var(--primary-color);
+    
+}
+body a button:hover{
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 18px;
+    border: solid var(--primary-color);
+}
+

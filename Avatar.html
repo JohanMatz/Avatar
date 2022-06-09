@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTURAR DATOS AVATAR</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="fila">
+
+        <div class="contForm">
+            <H2>REGISTRO DE INFORMACION</H2>
+            <P>Complete los campos para generar su avatar</P>
+
+            <form action="">
+                <div class="formGroup">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" placeholder="Ej: Johan Mateus" required>
+                    
+                </div>
+                <div class="formGroup">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" placeholder="Ej: 22" required>
+                </div>
+                <div class="formGroup">
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="formGroup">
+                    <label for="genero">Genero:</label>
+                    <select name="#" id="genero">
+                        <option value="">Seleccione</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" id="correo" placeholder="Ej: Johanmateus@mail.com" required>
+                </div>
+                <div class="formGroup">
+                    <label for="correo">Descripcion:</label>
+                    <textarea name="" id="descripcion" cols="30" rows="3"></textarea>
+                </div>
+                <div class="formGroup">
+                    <label for="color">Color:</label>
+                    <select name="#" id="color">
+                        <option value="">Seleccione</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Amarillo">Amarillo</option>
+                    </select>
+                </div>
+            </form>
+            <button onclick="capturarDatos()">Crear avatar</button>
+            
+        </div>
+
+        <div class="contAvatar" id="contAvatar">
+            <H2>AVATAR</H2>
+            <img src="img/user.png" alt="Imagen" id="mFoto">
+            <H3 id="mNombres">Nombre</H3>
+            <p id="mEdad">Edad</p>
+            <p id="mFecha">Fecha</p>
+            <p id="mGenero">Genero</p>
+            <p id="mCorreo">Correo</p>
+            <p id="mDescripcion">Descripcion</p>
+        </div>
+    </section>
+
+    <a href="Figuras.html">
+        <button id="cambiar">Next</button>
+    </a>
+    
+    
+    <script src="js/script.js"></script>    
+</body>
+</html>
